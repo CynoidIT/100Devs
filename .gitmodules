@@ -1,0 +1,18 @@
+[submodule "wk8-BBC"]
+	path = wk8-BBC
+	url = https://github.com/CynoidIT/100Devs.git
+[submodule "wk8-KhanAcademy"]
+	path = wk8-KhanAcademy
+	url = https://github.com/CynoidIT/100Devs.git
+[submodule "wk8-TechCrunch"]
+	path = wk8-TechCrunch
+	url = https://github.com/CynoidIT/100Devs.git
+[submodule "wk8-LevelGround"]
+	path = wk8-LevelGround
+	url = https://github.com/CynoidIT/100Devs.git
+[submodule "wk8-MaxSchneider"]
+	path = wk8-MaxSchneider
+	url = https://github.com/CynoidIT/100Devs.git
+[submodule "wk8-SergeyPikin"]
+	path = wk8-SergeyPikin
+	url = https://github.com/CynoidIT/100Devs.git

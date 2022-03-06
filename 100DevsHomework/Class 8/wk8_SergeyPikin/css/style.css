@@ -1,0 +1,421 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+  /* border: 1px solid gray; */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+body {
+}
+body section {
+  /* height: 200px; */
+  width: 100%;
+
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+header {
+  background: rgb(28, 35, 50);
+}
+
+.nav {
+  height: 100px;
+  width: 90%;
+  margin: 0 auto;
+  font-size: .7rem;
+}
+
+.nav > section {
+padding-top: 30px;
+}
+
+.nav > :nth-child(1){
+  width: 10%;
+  float: left;
+}
+
+.nav > :nth-child(2){
+  width: 80%;
+  text-align: right;
+  word-spacing: 30px;
+  float: left;
+}
+
+.nav > :nth-child(3){
+  width: 10%;
+  text-align: right;
+  float: left;
+}
+
+.nav > :nth-child(3) a{
+  padding: 0 10px;
+  background: rgb(56, 70, 100);
+  border: 10px solid rgb(56, 70, 100);
+  border-radius: 3%;
+}
+
+.hero {
+  background: rgb(28, 35, 50);
+  color: white;
+}
+
+.hero > section {
+  height: 450px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.hero > section > section {
+  width: 50%;
+  float: left;
+}
+
+.hero .inject {
+  width: 80%;
+  line-height: 30px;
+}
+
+.hero .inject > section > section {
+  text-align: center;
+  width: 50%;
+  float: left;
+  font-size: .8rem;
+}
+
+.hero .inject > section + section > :nth-child(1) {
+  background: white;
+}
+
+.hero .inject > section + section > :nth-child(1) a {
+    color: rgb(28, 35, 50);
+
+}
+
+.hero .imgBorder {
+  background: white;
+  border-radius: 10%;
+}
+
+.imgBorder > section {
+  width: 90%;
+  height: 90%;
+  background: gray;
+  margin: 3% 5%;
+
+}
+
+.imgBorder img {
+ margin: 23% 40%;
+}
+
+.users {
+  color: rgb(28, 35, 50);
+  background: white;
+  padding: 30px 0;
+}
+
+.users > section {
+  width: 90%;
+  height: 35px;
+  margin: 0 auto;
+}
+
+.users > section > section{
+  width: 120px;
+  height: 100%;
+  float: right;
+}
+
+.users img {
+  height: 100%;
+}
+
+.fullService span {
+  font-size: .8rem;
+}
+
+.fullService > section{
+  width: 90%;
+  margin: 0 auto;
+}
+
+.fullService > section > section {
+  width: 50%;
+  float: left;
+}
+
+
+.fullService > section > :nth-child(1){
+  padding-right: 50px;
+  line-height: 30px;
+  padding-top: 30px;
+}
+
+.fullService > section > :nth-child(1) a{
+  background: rgb(28, 35, 50);
+  font-size: .7rem ;
+  border: 10px solid rgb(28, 35, 50);
+  padding: 0 20px;
+  border-radius: 5%;
+}
+
+.fullService > :nth-child(2) > section {
+  height: 50%;
+  width: 50%;
+  float: left;
+}
+
+.fullService > section :nth-child(2) > section {
+  width: 50%;
+  float: left;
+  padding: 0 19px;
+  text-align: center;
+}
+.fullService > section > :nth-child(2) > section img{
+  width: 100%;
+}
+
+.fullService > section > :nth-child(2) > section h4{
+  margin: 5px 0;
+}
+
+.solution {
+  float: left;
+}
+
+.solution > section > section {
+  width: 50%;
+  float: left;
+}
+
+.solution > section > :nth-child(1){
+
+}
+
+.solution > section > :nth-child(2){
+  padding: 0 50px 0 20px;
+  line-height: 30px;
+}
+
+.solution > section > :nth-child(2) a{
+  background: rgb(28, 35, 50);
+  font-size: .7rem ;
+  border: 10px solid rgb(28, 35, 50);
+  padding: 0 20px;
+  border-radius: 5%;  
+}
+
+.solution > section > :nth-child(2) span{
+  font-size: .7rem;
+}  
+
+.solution > section > :nth-child(2) h3{
+  width: 57%;
+  font-size: 1.4rem;
+  margin: 15px 0;
+}  
+
+
+.how  {
+  float: left;
+  text-align: center;
+}
+
+.how > section {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.createAccount {
+  float: left;
+}
+
+.createAccount > section {
+  width: 50%;
+  float: left;
+}
+
+.createAccount > :nth-child(3) {
+  width: 100%;
+  text-align: center;
+}
+
+.coreFeatures {
+  color: white;
+  background: rgb(56, 70, 100);
+  padding-bottom: 100px;
+  float: left;
+}
+
+.coreFeatures h4 {
+  margin: 5px 0;
+  font-size: .8rem;
+}
+
+.coreFeatures p {
+  font-size: .8rem;
+}
+
+.coreFeatures > section > section {
+  border-radius: 4%;
+  background: white;
+  color: black;
+  margin: 15px 15px;
+  padding: 10px 20px;
+  line-height: 20px;
+  height: 145px;
+  width: 300px;
+}
+
+.coreFeatures > :nth-child(2) > :nth-child(1) {
+  position: relative;
+  float: left;
+  left: 45px;
+}
+
+.coreFeatures > :nth-child(2) > :nth-child(2) {
+  position: relative;
+  float: left;
+  left: 40px;
+}
+
+.coreFeatures > :nth-child(2) > :nth-child(3) {
+  position: relative;
+  float: left;
+  left: 40px;
+}
+
+.coreFeatures > :nth-child(2) > :nth-child(4) {
+  position: absolute;
+  float: left;
+  left: 1030px;
+}
+
+
+.coreFeatures > :nth-child(3) > :nth-child(1) {
+  position: absolute;
+  float: left;
+  top: 2411px;
+  left: -175px;
+}
+
+.coreFeatures > :nth-child(3) > :nth-child(2) {
+  position: relative;
+  float: left;
+  left: 150px;
+}
+
+.coreFeatures > :nth-child(3) > :nth-child(3) {
+  position: relative;
+  float: left;
+  left: 150px;
+}
+
+.coreFeatures > :nth-child(3) > :nth-child(4) {
+  position: absolute;
+  float: left;
+  top: 2411px;
+  left: 810px;
+}
+
+
+.approach {
+  float: left;
+}
+
+.approach > section {
+  width: 50%;
+  float: left;
+}
+
+.love {
+  float: left;
+}
+
+.love > :nth-child(1) {
+  width: 10%;
+  float: left;
+}
+
+.love > :nth-child(2) {
+  width: 80%;
+  float: left;
+}
+
+.love > :nth-child(3) {
+  width: 10%;
+  float: left;
+}
+
+.headshot {
+  width: 60px;
+  height: 60px;
+  background: gray;
+  border-radius: 50%;
+}
+
+.order {
+  float: left;
+  color: white;
+  background: rgb(56, 70, 100);
+}
+
+.order > section {
+  width: 50%;
+  float: left;
+}
+
+footer {
+  float: left;
+  font-size: 0.9rem;
+  margin-bottom: 50px;
+}
+
+footer > section {
+  width: 25%;
+  float: left;
+}
+
+footer > section + section {
+  width: 15%;
+  padding: 0 20px;
+  float: left;
+}
+
+footer ul {
+  padding-left: 28px;
+}
+
+footer li {
+  list-style-image: url(../roundSquare.png);
+}
+
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/

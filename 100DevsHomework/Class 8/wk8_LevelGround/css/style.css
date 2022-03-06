@@ -1,0 +1,299 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  /* width: 1135px; */
+  margin: 0 auto;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+  /* height: 60px; */
+  width: 100%;
+  float: left;
+  background: rgb(102, 118, 138);
+
+}
+header > section{
+  width: 33.3333%;
+  height: 100%;
+  float: left;
+  text-align: center;
+  padding-top: 20px;
+  font-weight: bolder;
+  font-size: .8rem;
+}
+
+header > section:nth-child(1) {
+  width: 25%;
+}
+
+header > section:nth-child(1) a {
+  color: white;
+  padding: 0 10px;
+}
+
+header > section:nth-child(2) {
+  width: 50%;
+}
+
+header > section:nth-child(2) a {
+  color: white;
+}
+
+header > section:nth-child(3) {
+  width: 25%;
+}
+
+header > section:nth-child(3) a {
+  color: rgb(102, 118, 138);
+  background: white;  
+  border: 9px solid white;
+  border-radius: 10%;
+}
+
+/****************/
+/* MAIN SECTION */
+/****************/
+
+main {
+  height: 100%;
+  width: 100%;
+  float: left;
+  text-align: center;
+}
+
+main h1 {
+  font-size: 2.2rem;
+}
+
+.hero {
+  width: 100%;
+  float: left;
+  /* padding: 40px; */
+}
+
+.hero a {
+
+  color: white;
+}
+
+.hero span {
+  color:rgb(22, 31, 42);
+  font-size: .7rem;
+  font-style: italic;
+}
+
+main > section:nth-child(1) {
+  background: rgb(102, 118, 138);
+  color: white;
+  float: left;
+}
+
+main > section:nth-child(1) section {
+  float: left;
+  margin:0 15%;
+  position: relative;
+  
+}
+
+main > section:nth-child(2) {
+  float: left;
+}
+
+main > section:nth-child(2) section {
+  width: 50%;
+  float: left;
+  position: relative;
+  margin: 25px 25%;
+}
+
+main > section:nth-child(3) {
+  background: rgb(219, 223, 226);
+  /* height: 600px; */
+  float: left;
+}
+
+main > section:nth-child(3) section {
+  /* height: 100%; */
+  width: 50%;
+  float: left;
+  position: relative;
+  padding: 0 10px;
+}
+
+main > section:nth-child(3) section > div:nth-child(1) {
+  width: 60%;
+  height: 150px;
+  margin: 35px 20%;
+  background: rgb(102, 118, 138);
+}
+
+main > section:nth-child(3) section p+div {
+  width: 175px;
+  height: 50px;
+  margin: 35px auto;
+  padding-top: 14px;
+  border:2px solid rgb(102, 118, 138);
+}
+
+main > section:nth-child(4) {
+  background: white;
+  /* height: 600px; */
+  float: left;
+}
+
+main > section:nth-child(4) section {
+  /* height: 100%; */
+  width: 50%;
+  float: left;
+  position: relative;
+  padding: 0 10px;
+}
+
+#volunteer {
+  /* height: 450px; */
+  width: 50%;
+  float: left;
+  /* position: relative; */
+  margin: 100px 25% 50px 25%;
+}
+
+#volunteer div {
+  width: 175px;
+  height: 50px;
+  margin: 35px auto;
+  padding-top: 14px;
+  border:2px solid rgb(102, 118, 138);
+}
+
+
+
+
+footer {
+  /* height: 300px; */
+  width: 100%;
+  float: left;
+  background: rgb(22, 31, 42);
+  color: white;
+}
+
+footer .container {
+  height: 70%;
+}
+
+
+.leftFoot{
+  width: 200px;
+  float: left;
+}
+
+.leftFoot span{
+  color:rgb(102, 118, 138) ;
+}
+
+.leftFoot a {
+  color: white;
+}
+
+.social{
+  width: 200px;
+  height: 100%;
+  text-align: center;
+  word-spacing: 20px;
+  padding-top: 10px;
+  float: left;
+}
+
+.siteMap{
+  word-spacing: normal;
+  text-align: left;
+  padding-top: 20px;
+  padding-left: 40px;
+  line-height: 30px;
+  float: left;
+}
+
+.contribute{
+  word-spacing: normal;
+  text-align: left;
+  padding-top: 20px;
+  padding-left: 40px;
+  line-height: 30px;
+  float: left;
+}
+
+.middleFoot{
+  width: 50%;
+  height: 100%;
+  float: left;
+}
+
+.rightFoot {
+  width: 250px ;
+  float: right;
+}
+
+.contactInfo {
+
+  line-height: 25px;
+  padding-right: 5px;
+}
+
+
+
+.underFoot {
+  width: 94%;
+  border-top: 1px solid white;
+  margin: 25px 3%;
+  float: left;
+}
+
+.underFoot h4{
+  width: 90%;
+  float: left;
+}
+.underFoot img{
+  width: 10%;
+  padding-top: 20px;
+  float: right;
+  text-align: right;
+}
+
+@media screen and (max-width:600px) {
+  *{
+    font-size: 0.9rem;
+  }
+  main > section:nth-child(1) section{
+    margin: auto;
+  }
+  .rightFoot{
+    margin: 0 auto; 
+    float: none; 
+    width: auto;
+  }
+}

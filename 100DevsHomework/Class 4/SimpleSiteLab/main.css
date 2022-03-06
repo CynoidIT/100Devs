@@ -1,0 +1,60 @@
+body{
+   display: grid;
+   text-align: center;
+   padding: 40px;
+   width: 800px;
+   margin: 0;
+   color: white;
+   background-color: rgb(135, 206, 235);
+}
+
+header{
+    padding: 30px;
+}
+
+nav{
+    padding: 40px;
+    font-weight: bolder;
+}
+
+a{
+    color: rgb(72, 205, 49);
+}
+
+h1{
+    font-style: italic;
+    font-size: 30px;
+}
+div{
+    display: inline-block;
+    color: gray;
+}
+span{
+    display: inline-block;
+    font-weight: bolder;
+}
+
+h2{
+    text-align: left;
+    font-weight: bolder;
+}
+
+p{
+    text-align: left;
+    font-size: 18px;
+}
+
+body>section{
+    border: 5px solid rgb(72, 205, 49);
+}
+
+img{
+    float: right;
+    max-height: 300px;
+    padding: 30px;
+}
+
+section>section{
+    margin: 30px;
+    text-justify: left;
+}

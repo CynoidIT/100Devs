@@ -1,0 +1,227 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+  /* border: 1px solid gray; */
+  text-decoration: none;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  color: rgb(6, 110, 110);
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+  height: 40px;
+  margin-top: 30px;
+}
+
+
+header h1 {
+  font-size: 1.2rem;
+  color: rgb(3, 59, 59);
+}
+
+header a {
+  color:rgb(6, 110, 110);
+  padding-top: 10px;
+}
+
+header>:nth-child(1){
+  display: none;
+}
+
+header>:nth-child(2){
+  width: 10%;
+  float: left;
+}
+
+header>:nth-child(2) a {
+  padding: 10px;
+  font-weight: bolder;
+}
+
+header>:nth-child(3){
+  width: 80%;
+  height: 100%;
+  float: left;
+  text-align: center;
+}
+
+header>:nth-child(3) a {
+  padding: 10px;
+}
+
+header>:nth-child(4){
+  width: 10%;
+  float: left;
+}
+
+header>:nth-child(4) a {
+  padding: 10px;
+  text-align: right;
+  color: white;
+  background: rgb(3, 59, 59);
+}
+
+.hero {
+  /* height: 200px; */
+  float: left;
+}
+
+.hero input {
+  height: 35px;
+  padding: 0;
+  float: left;
+}
+
+.button {
+  background: rgb(3, 59, 59);
+  width: 70px;
+  height: 35px;
+  text-align: center;
+  float: left;
+  padding: 3% 0;
+}
+.hero p {
+  float: left;
+}
+
+.button a {
+  color:white;
+}
+
+.hero img {
+  width: 100%;
+}
+
+.hero > :nth-child(1) {
+  /* height: 200px; */
+  width: 40%;
+  float: left;
+  padding: 30px;
+}
+
+.hero > :nth-child(2) {
+  /* height: 200px; */
+  width: 60%;
+  float: left;
+  padding-left: 30px;
+}
+
+.features {
+  width: 100%;
+  float: left;
+  padding: 80px 20px;
+}
+
+.features h3 {
+  color: rgb(3, 59, 59);
+}
+
+.features a {
+  text-decoration: none;
+  color: rgb(3, 59, 59);
+}
+
+.features > section {
+  width: 25%;
+  float: left;
+  padding: 0 10px;
+}
+
+.collection {
+  float: left;
+  padding: 10px 30px;
+}
+
+.collection h2 {
+  font-size: 2rem;
+}
+
+.collection>section {
+  width: 55%;
+}
+
+footer {
+
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+
+@media screen and (max-width:600px) {
+
+  header {
+    margin: 10px;
+  }
+
+  header > :nth-child(1) {
+    display:contents;
+    width: 10%;
+    text-align: left;
+    font-size: 25px;
+    float: left;
+  }
+  
+  header > :nth-child(2) {
+    width: 90%;
+    text-align: center;
+    font-size: 25px;
+    float: right;
+    padding-right: 10%;
+  }
+
+  header > :nth-child(n+3){
+    display: none;
+  }
+
+  .hero input {
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  .button{
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .hero > :nth-child(1),.hero>:nth-child(2) {
+    width: 100%;
+    float: none;
+  }
+
+  .features > section {
+    float: none;
+    width: 100%;
+    padding: 20px 10px;
+  }
+
+  .collection > section {
+    width: 100%;
+    padding-bottom: 50px;
+  }
+
+}

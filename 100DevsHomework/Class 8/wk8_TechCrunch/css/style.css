@@ -1,0 +1,191 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+  list-style: none;
+  /* border: 1px solid blue; */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+
+body {
+  
+}
+
+.navMenu{
+  width: 175px;
+  padding-left: 10px;
+  line-height: 30px;
+
+  position: fixed;
+}
+
+.navMenu .tc :nth-child(1) a {
+  color: rgb(8, 163, 8);
+  font-weight: bolder;
+  font-size: 30px;
+}
+
+.navMenu .tc :nth-child(2) a {
+  color: orange;
+  font-weight: bolder;
+}
+
+.navMenu input {
+  width: 160px;
+} 
+
+.navMenu ul {
+  padding-left: 0;
+}
+
+.navMenu a {
+  text-decoration: none;
+  color: rgb(116, 116, 116);
+}
+
+
+main {
+  float: left;
+  margin-left: 175px;
+}
+
+main h1 {
+  margin: 0;
+}
+
+main h2 {
+  font-size: 1rem;
+  margin: 0;
+}
+main span {
+  font-size: 0.6rem;
+}
+
+.headlines {
+  float: left;
+}
+
+.headlines>h2 {
+  padding: 10px 0;
+}
+
+.headlines img {
+  width: 100%;
+}
+
+.headlines>section {
+  width: 66.6666%;
+  padding: 0 5px;
+  float: left;
+}
+
+.headlines>section+section {
+  width: 33.3333%;
+  float: left;
+}
+
+.headlines>section section {
+  height: 25%;
+  padding: 20px;
+}
+
+
+
+
+.latest {
+  float: left;
+  margin-right: 50px;
+}
+
+.latest>h2{
+  padding: 20px 0;
+}
+
+.latest img {
+  width: 100%;
+  margin: 0 10%;
+}
+
+
+.latest>article {
+  width: 100%;
+  height: 200px;
+  float: left;
+}
+
+.latest>article>section{
+  height: 100%;
+  width: 33.3333%;
+  float: left;
+}
+
+
+
+
+
+
+
+footer {
+
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+@media screen and (max-width:900px) {
+  .navMenu{
+    display: none;
+  }
+
+  main {
+    margin: auto;
+  }
+  .headlines>h2{
+    text-align: center;
+  }
+  .headlines>section{
+    width: 100%;
+    padding: 10px;
+  }
+  .headlines>section+section{
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .headlines img{
+    width: 100%
+  }
+
+  .latest {
+    margin: 0;
+  }
+.latest>h2{
+  text-align: center;
+}
+  .latest > article {
+    padding: 30px;
+  }
+
+  .latest article section{
+    width: 100%;
+    height: auto;
+    float: none;
+  }
+  .latest img {
+    margin: 0;
+  };
+}

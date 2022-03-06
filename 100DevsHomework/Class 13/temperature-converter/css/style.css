@@ -1,0 +1,44 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+
+body {
+  background: black;
+  color: white; 
+}
+
+main {
+  width: 80%;
+  margin: 50px auto;
+  display: flex;
+  align-content: space-around;
+
+}
+
+section {
+  height: 100px;
+  width: 400px;
+  border: 2px solid white;
+  margin: 0 10px;
+  text-align: center;
+  padding: 30px 0;
+  font-size: xx-large;
+}  
+
+input {
+  width: 120px;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/

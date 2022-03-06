@@ -1,0 +1,17 @@
+h1{
+    color:purple;
+}
+
+section>h2{
+    color:blue;
+}
+
+article>h2{
+    color:red;
+    font-size: 50px;
+}
+
+section article h2{
+    color:orange;
+
+}

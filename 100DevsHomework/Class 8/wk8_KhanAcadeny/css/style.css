@@ -1,0 +1,114 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+  /* border: 1px solid red; */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  width: 100%;
+  margin: 0 auto;
+
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+  border-bottom: 1px solid black;
+}
+
+.navMenu {
+  height: 75px;
+  text-align: center;
+  font-weight: bolder;
+}
+
+.navMenu input {
+  width: 150px;
+  color: rgb(3, 88, 192);
+  font-weight: bolder;
+}
+
+.navMenu a {
+  color: rgb(3, 88, 192);
+}
+
+
+.navMenu h1 {
+  font-size: 1.2rem;
+  margin: 7px 0;
+}
+
+.navMenu section {
+  height: 100%;
+  width: 33.3333%;
+  float: left;
+  padding-top: 20px;
+  word-spacing: 25px;
+}
+
+.navMenu>section:nth-child(3)>a:nth-child(3) {
+  word-spacing: normal;
+}
+
+.hero {
+  height: 500px ;
+  margin: 0 auto;
+}
+
+.hero section {
+  height: 100%;
+  width: 50%;
+  float: left;
+  padding: 58px;
+  margin: 0 auto;
+}
+
+.hero h1{
+  font-size: 2.5rem;
+}
+
+.hero a {
+  color: white;
+  background: rgb(0, 106, 236);
+  font-weight: bolder;
+  text-align: center;
+  border: 10px solid rgb(0, 106, 236);
+  border-radius: 5%;
+}
+
+footer {
+
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+@media screen and (max-width:1050px){
+
+  .hero section{
+    float: none;
+    width: 100%;
+  }
+}

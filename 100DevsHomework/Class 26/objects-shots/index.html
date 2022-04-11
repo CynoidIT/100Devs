@@ -12,22 +12,22 @@
 		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
-
-		<h1>Which Cocktail?</h1>
-		<input type="text" name="" value="">
-		<button type="button" name="button">Get Cocktail</button>
-
-		<h2>Name</h2>
-		<img src="" alt="">
-		<h3>Instructions</h3>
-
-<div class="pic-ctn">
-    <img src="https://picsum.photos/200/300?t=1" alt="" class="pic">
-    <img src="https://picsum.photos/200/300?t=2" alt="" class="pic">
-    <img src="https://picsum.photos/200/300?t=3" alt="" class="pic">
-    <img src="https://picsum.photos/200/300?t=4" alt="" class="pic">
-    <img src="https://picsum.photos/200/300?t=5" alt="" class="pic">
-  </div>
+		<section>
+			<h1>Which Cocktail?</h1>
+			<input type="text" name="" value="">
+			<button id="submit" type="button" name="button">Get Cocktail</button>
+		</section>
+		
+		<section id="result">
+			<button id="left" type="submit"><</button>
+			<div>
+				<span id="name"></span>
+				<img src="" alt="" id="picture">
+				<span id="instructions"></span>
+				<span id="index"></span>
+			</div>
+			<button id="right" type="submit">></button>
+		</section>
   
 		<script type="text/javascript" src="js/main.js"></script>
 	</body>

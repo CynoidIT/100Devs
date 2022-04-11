@@ -10,12 +10,33 @@
 /******************************************
 /* LAYOUT
 /*******************************************/
-img{
-  display: block;
+
+body {
   margin: 0 auto;
+  width: 80vw;
+  text-align: center;
 }
 
+section {
+  display: flex;
+  flex-direction: column;
+}
 
+img{
+  margin: 0 auto;
+  max-width: 200px;
+  max-height: 200px;
+}
+
+select {
+  width: 200px;
+  margin: 20px auto;
+}
+
+button {
+  width: 200px;
+  margin: 0 auto;
+}
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/

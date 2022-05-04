@@ -22,20 +22,24 @@ class Animal{
 
 class Dog extends Animal{
     constructor(name, sound, breed){
-        super(name)
-        super(sound)
-        super(breed)
+        super(name, sound, breed)
     }
 }
 
 class Cat extends Animal{
     constructor(name, sound, breed){
-        super(name)
-        super(sound)
-        super(breed) 
+        super(name, sound, breed)
     }
 }
 
+const spike = new Dog('Spike', 'Woof!', 'Husky')
+const fluffy = new Cat('Fluffy', 'Meow!', 'Persian')
+
+let farm = [spike, fluffy]
+
+for (a of farm){
+    a.speak()
+}
 
 
 

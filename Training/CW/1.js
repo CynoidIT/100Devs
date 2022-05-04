@@ -61,3 +61,12 @@ function rentalCarCost(d) {
       return subT
     }
   }
+
+//How good are you really?
+
+function betterThanAverage(classPoints, yourPoints) {
+  let x = yourPoints
+  classPoints.forEach(e=>x+=e)
+  return(x/(classPoints.length+1)<yourPoints)
+  }
+  

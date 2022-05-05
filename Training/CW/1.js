@@ -70,3 +70,13 @@ function betterThanAverage(classPoints, yourPoints) {
   return(x/(classPoints.length+1)<yourPoints)
   }
   
+
+//Area or perimeter
+
+const areaOrPerimeter = function(l , w) {
+  if (l === w) {
+    return l*w
+  } else {
+    return 2*w + 2*l
+    }
+};

@@ -5,8 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+
 </head>
 <body>
+    <header>
+        <section>
+            <h1>Dog-Cat-Toe</h1>
+        </section>
+    </header>
+    <div id="gameBoard">
+        <section class="boardLocation" id="0"></section>
+        <section class="boardLocation" id="1"></section>
+        <section class="boardLocation" id="2"></section>
+        <section class="boardLocation" id="3"></section>
+        <section class="boardLocation" id="4"></section>
+        <section class="boardLocation" id="5"></section>
+        <section class="boardLocation" id="6"></section>
+        <section class="boardLocation" id="7"></section>
+        <section class="boardLocation" id="8"></section>
+    </div>
+    <footer>
+        <section><h2 id="winner"></h2></section>
+        <section><div id="resetGame" class="hidden" >New Game</div></section>
+    </footer>
     <script src="./js/script.js"></script>
 </body>
 </html>

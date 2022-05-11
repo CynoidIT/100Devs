@@ -73,6 +73,9 @@ function clickBoard(x) {
                 
         }else if (checkDraw() === true){
             document.getElementById('winner').innerText = `It's a draw` 
+            document.getElementById('resetGame').className = ''
+            boardLocations.forEach(location => {
+                location.removeEventListener('click', clickBoard)})
         }else {
             currentPlayer === 0 ? currentPlayer = 1 : currentPlayer = 0
             //console.log('Keep playing')

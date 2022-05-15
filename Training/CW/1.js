@@ -95,3 +95,11 @@ const quarterOf = (month) => {
       return 4;
   
 }
+
+//L1: Set alarm
+
+function setAlarm(employed, vacation){
+  if(employed === true && vacation ===false){
+    return true
+  }else return false
+}

@@ -7,51 +7,68 @@ const figlet = require('figlet')
 const server = http.createServer((req, res) => {
   const page = url.parse(req.url).pathname;
   const params = querystring.parse(url.parse(req.url).query);
-  console.log(page);
+  console.log(page, params);
   if (page == '/') {
     fs.readFile('index.html', function(err, data) {
       res.writeHead(200, {'Content-Type': 'text/html'});
       res.write(data);
       res.end();
     });
-  }
-  else if (page == '/otherpage') {
+  }else if (page == '/otherpage') {
     fs.readFile('otherpage.html', function(err, data) {
       res.writeHead(200, {'Content-Type': 'text/html'});
       res.write(data);
       res.end();
     });
-  }
-  else if (page == '/otherotherpage') {
+  }else if (page == '/otherotherpage') {
     fs.readFile('otherotherpage.html', function(err, data) {
       res.writeHead(200, {'Content-Type': 'text/html'});
       res.write(data);
       res.end();
     });
-  }
-  else if (page == '/api') {
-    if('student' in params){
-      if(params['student']== 'leon'){
-        res.writeHead(200, {'Content-Type': 'application/json'});
+  }else if (page == '/api') {
+    name1 = params['player1']
+    name2 = params['player2']
+    //rps code here
+    let rpsls = ['Rock', 'Paper', 'Scissors', 'Lizard', 'Spock']
+    let winner = ''
+    let p1Res = rpsls[Math.floor(Math.random()*5)]
+    let p2Res = rpsls[Math.floor(Math.random()*5)]
+    if (p1Res === p2Res){
+      winner = 'TIE'
+      }else if (p1Res === 'Rock' && p2Res === "Scissors"){ winner = `${name1} wins!`
+      }else if (p1Res === 'Rock' && p2Res === "Lizard")
+      { winner = `${name1} wins!`
+      }else if (p1Res === 'Scissors' && p2Res === "Lizard")
+      { winner = `${name1} wins!`  
+      }else if (p1Res === 'Scissors' && p2Res === "Paper")
+      { winner = `${name1} wins!`     
+      }else if (p1Res === 'Lizard' && p2Res === "Paper")
+      { winner = `${name1} wins!` 
+      }else if (p1Res === 'Lizard' && p2Res === "Spock")
+      { winner = `${name1} wins!` 
+      }else if (p1Res === 'Paper' && p2Res === "Spock")
+      { winner = `${name1} wins!`     
+      }else if (p1Res === 'Paper' && p2Res === "Rock")
+      { winner = `${name1} wins!` 
+      }else if (p1Res === 'Spock' && p2Res === "Rock")
+      { winner = `${name1} wins!` 
+      }else if (p1Res === 'Spock' && p2Res === "Scissors")
+      { winner = `${name1} wins!` 
+      }else { winner = `${name2} wins!` 
+      }
+
+    //response
+    res.writeHead(200, {'Content-Type': 'application/json'});
         const objToJson = {
-          name: "leon",
-          status: "Boss Man",
-          currentOccupation: "Baller"
+          name1 : params['player1'],
+          name2 : params['player2'],
+          results1 : p1Res,
+          results2 : p2Res,
+          winner: winner
         }
         res.end(JSON.stringify(objToJson));
-      }//student = leon
-      else if(params['student'] != 'leon'){
-        res.writeHead(200, {'Content-Type': 'application/json'});
-        const objToJson = {
-          name: "unknown",
-          status: "unknown",
-          currentOccupation: "unknown"
-        }
-        res.end(JSON.stringify(objToJson));
-      }//student != leon
-    }//student if
-  }//else if
-  else if (page == '/css/style.css'){
+  }else if (page == '/css/style.css'){
     fs.readFile('css/style.css', function(err, data) {
       res.write(data);
       res.end();
